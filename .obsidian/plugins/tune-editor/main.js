@@ -36,7 +36,7 @@ module.exports = class EditorTune extends Plugin {
       name: "open-editortune",
       callback: () => this.openPanel(),
     });
-    const fontSize = ITEMS.find((item) => item.name === "val-font-size");
+    const fontSize = ITEMS.find((item) => item.name === "tune-editor-font-size");
     this.addCommand({
       id: "tune-increase-font-size",
       name: "文字サイズを1ステップ増やす",
