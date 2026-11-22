@@ -1,0 +1,10 @@
+{
+  "id": "tune-editor",
+  "name": "Tune Editor",
+  "version": "0.1.0",
+  "minAppVersion": "0.15.0",
+  "description": "Tune Editor",
+  "author": "me",
+  "main": "main.js",
+  "isDesktopOnly": false
+}

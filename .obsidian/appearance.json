@@ -1,0 +1,7 @@
+{
+  "showRibbon": false,
+  "enabledCssSnippets": [
+    "style_common"
+  ],
+  "cssTheme": "Primary"
+}

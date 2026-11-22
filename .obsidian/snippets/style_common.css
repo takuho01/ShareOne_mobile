@@ -1,0 +1,214 @@
+
+/* ---------------------------------- */
+/* Basic */
+/* ---------------------------------- */
+
+:root {
+    /* primary */
+    --base-font-color-primary-light: rgb(131, 70, 12, 0.82);
+    --editor-background-color-primary-light: rgba(248, 245, 241, 1.0);
+    --current-cursor-background-color-primary-light: rgba(230, 222, 212, 0.26);
+    
+    /* for mobile */
+    --tune-editor-font-size: 16px;
+    --tune-editor-line-height: 1.6;
+    --tune-editor-editor-width: 100%;
+    
+    /* common per theme */
+    --line-height: 1.78em;
+    --font-weight: 100;
+    --editor-width: 75%;
+}
+
+.cm-line {
+    color: var(--base-font-color-primary-light);
+    /* line-height: var(--line-height); */
+    line-height: var(--tune-editor-line-height);
+    /* font weightはなぜか変数で設定できない */
+    /* font-weight: var(--font-weight); */
+    font-weight: 330;
+}
+
+.cm-line:not(.HyperMD-header) {
+    font-size: var(--tune-editor-font-size);
+}
+
+.cm-active.cm-line {
+    background-color: var(--current-cursor-background-color-primary-light);
+}
+
+.cm-active.cm-line .cm-formatting {
+    /* List 書き始めのフォントカラー */
+    color: var(--base-font-color-primary-light);
+}
+
+
+
+/* ---------------------------------- */
+/* Editor */
+/* ---------------------------------- */
+.markdown-source-view.mod-cm6 .cm-sizer {
+    /* Editor Width */
+    /* width: var(--editor-width); */
+    width: var(--tune-editor-editor-width);
+}
+
+
+/* ---------------------------------- */
+/* List */
+/* ---------------------------------- */
+:root {
+    --bullet-color : rgba(163, 84, 84, 1);
+    
+    --list-bullet-margin-left-NotoSansJP: -0.18em;
+    --list-bullet-margin-right-NotoSansJP: +0.42em;
+    --nobullet-padding-NotoSansJP: calc(var(--list-bullet-margin-left-NotoSansJP) + var(--list-bullet-margin-right-NotoSansJP) - 0.14em );
+
+    --list-bullet-margin-left-NotoSansJP_mobile: -0.30em;
+    --list-bullet-margin-right-NotoSansJP_mobile: +0.05em;
+    --nobullet-padding-NotoSansJP_mobile: calc(var(--list-bullet-margin-left-NotoSansJP_mobile) + var(--list-bullet-margin-right-NotoSansJP_mobile) - 0.14em );
+}
+
+.HyperMD-list-line.cm-line {
+    padding-top: 0em !important;
+}
+
+
+.list-bullet {
+    margin-left: var(--list-bullet-margin-left-NotoSansJP_mobile);
+    margin-right: var(--list-bullet-margin-right-NotoSansJP_mobile);
+}
+
+.list-bullet::after {
+    --bullet-size: 0.27em;
+    width: var(--bullet-size);
+    height: var(--bullet-size);
+}
+
+.cm-s-obsidian .HyperMD-list-line.HyperMD-list-line-nobullet > .cm-hmd-list-indent > .cm-indent-spacing:last-child {
+    /* nobulletのインデント調整 */
+    /* インデントガイド On/OffでClass名が変わる。これは　ガイドOn版。 */
+    /* ガイドOffでは細かい調整ができない。 */
+    
+    padding-inline-start: calc(var(--list-indent-editing) + var(--list-marker-space) + var(--nobullet-padding-NotoSansJP_mobile) );
+}
+
+.markdown-source-view.mod-cm6.is-live-preview .cm-indent::before {
+    /* Bullet位置調整に合わせて、インデントガイドの位置もずらす */
+    margin-inline-start: calc(var(--indentation-guide-editing-indent) + var(--list-bullet-margin-left-NotoSansJP));
+    
+    /* インデントガイドをオフにする場合は、色を背景色と同じにすること */
+}
+
+
+/* ---------------------------------- */
+/* Header */
+/* ---------------------------------- */
+
+:root {
+    --font-color-h1: rgb(197, 122, 72);
+    --font-color-h2: rgb(197, 122, 72);
+    --font-color-h3: rgb(197, 122, 72);
+    --font-color-h4: rgb(196, 62, 22);
+}
+
+.HyperMD-header.HyperMD-header-1.cm-line {
+    --font-size-h1: 160%;
+    --font-size-h1-mobile: 130%;
+    /* font-size: var(--font-size-h1); */
+    font-size: var(--font-size-h1-mobile);
+    font-weight: 650;
+    color: var(--font-color-h1);
+    /* border-bottom: 0.1; */
+    /* text-decoration: underline; */
+    /* padding-top: 0.0em; */
+    padding-bottom: 0.6em;
+}
+
+.HyperMD-header.HyperMD-header-2.cm-line {
+    --font-size-h2: 1150%;
+    --font-size-h2-mobile: 115%;
+    /* font-size: var(--font-size-h2); */
+    font-size: var(--font-size-h2-mobile);
+    font-weight: 500;
+    color: var(--font-color-h2);
+    border-bottom: 2px solid var(--font-color-h2);
+    /* text-decoration: underline; */
+    /* padding-top: 0.0em; */
+    /* padding-bottom: 0.5em; */
+
+    /* margin-bottom: 0.5em; */
+    /* margin-bottom: 3em !important; */
+}
+
+
+.HyperMD-header.HyperMD-header-3.cm-line {
+    --font-size-h3: 115%;
+    --font-size-h3-mobile: 115%;
+    /* font-size: var(--font-size-h3); */
+    font-size: var(--font-size-h3-mobile);
+    font-weight: 450;
+    color: var(--font-color-h3);
+    /* border-bottom: 0.1; */
+    /* text-decoration: underline; */
+    /* padding-top: 0.0em; */
+    padding-bottom: 0.5em;
+}
+.HyperMD-header.HyperMD-header-4.cm-line {
+    --font-size-h4: 100%;
+    --font-size-h4-mobile: 100%;
+    /* font-size: var(--font-size-h4); */
+    font-size: var(--font-size-h4-mobile);
+    font-weight: 550;
+    color: var(--font-color-h4);
+    /* border-bottom: 0.1; */
+    /* text-decoration: underline; */
+    padding-top: 0.0em;
+    /* padding-bottom: 0.5em; */
+}
+
+
+
+
+/* ---------------------------------- */
+/* Canvas */
+/* ---------------------------------- */
+.mod-inside-iframe.markdown-source-view.mod-cm6 .cm-sizer {
+    /* Canvas Editor Width */
+    width: 100%;
+}
+
+.markdown-embed-content.node-insert-event .markdown-preview-sizer {
+    /* Canvas Font Setting */
+    font-size: 15px !important;
+    line-height: 1.7em;
+}
+
+.mod-inside-iframe.markdown-source-view.mod-cm6 .cm-line {
+    /* Canvas Font Setting */
+    font-size: 15px !important;
+}
+
+.canvas-node:not(.canvas-node-group) {
+    /* 見た目だけ。本体の変え方はわからなかった*/
+    width: 550px !important;
+    height: 800px !important;
+}
+
+
+
+/* ---------------------------------- */
+/* Other */
+/* ---------------------------------- */
+
+.markdown-source-view.mod-cm6 img,
+.markdown-reading-view img {
+    max-width: 10em;
+    max-height: 14em;
+    
+    /* 画像を行中心に置こうと思ったが、うまくいかない */
+    /* display: block; */
+    /* margin-inline: auto; */
+}
+
+

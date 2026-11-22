@@ -1,0 +1,71 @@
+{
+  "confirmDeletion": true,
+  "showAddCommand": true,
+  "debug": false,
+  "editorMenu": [],
+  "fileMenu": [],
+  "leftRibbon": [],
+  "rightRibbon": [],
+  "titleBar": [],
+  "statusBar": [],
+  "pageHeader": [
+    {
+      "id": "my-plugins:myplugins-decrease-editor-width",
+      "icon": "lucide-arrow-big-down",
+      "name": "my-plugins: myplugins : decrease editor width",
+      "mode": "any"
+    },
+    {
+      "id": "my-plugins:myplugins-increase-editor-width",
+      "icon": "lucide-arrow-big-up",
+      "name": "my-plugins: myplugins : increase editor width",
+      "mode": "any"
+    },
+    {
+      "id": "my-plugins:myplugins-decrease-line-height",
+      "icon": "lucide-a-arrow-down",
+      "name": "my-plugins: myplugins : decrease line height",
+      "mode": "any"
+    },
+    {
+      "id": "my-plugins:myplugins-increase-line-height",
+      "icon": "lucide-a-arrow-up",
+      "name": "my-plugins: myplugins : increase line height",
+      "mode": "any"
+    },
+    {
+      "id": "journals:open-calendar",
+      "icon": "calendar-days",
+      "name": "Journals: Open Calendar",
+      "mode": "any"
+    },
+    {
+      "id": "tune-editor:open-editortune",
+      "icon": "lucide-activity",
+      "name": "Tune Editor: open-editortune",
+      "mode": "any"
+    }
+  ],
+  "macros": [],
+  "explorer": [],
+  "emptyState": [],
+  "textToolbarCommands": [],
+  "hide": {
+    "statusbar": [],
+    "leftRibbon": [],
+    "editorMenuItems": [],
+    "fileMenuItems": []
+  },
+  "spacing": 0,
+  "advancedToolbar": {
+    "rowHeight": 48,
+    "rowCount": 1,
+    "spacing": 0,
+    "buttonWidth": 48,
+    "columnLayout": false,
+    "mappedIcons": [],
+    "tooltips": false,
+    "heightOffset": 0
+  },
+  "spacingReset": true
+}
