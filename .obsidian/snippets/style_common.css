@@ -114,7 +114,7 @@
 
 .HyperMD-header.HyperMD-header-1.cm-line {
     --font-size-h1: 160%;
-    --font-size-h1-mobile: 130%;
+    --font-size-h1-mobile: calc(var(--tune-editor-font-size) + 5px);
     /* font-size: var(--font-size-h1); */
     font-size: var(--font-size-h1-mobile);
     font-weight: 650;
@@ -127,7 +127,7 @@
 
 .HyperMD-header.HyperMD-header-2.cm-line {
     --font-size-h2: 1150%;
-    --font-size-h2-mobile: 115%;
+    --font-size-h2-mobile: calc(var(--tune-editor-font-size) + 3px);
     /* font-size: var(--font-size-h2); */
     font-size: var(--font-size-h2-mobile);
     font-weight: 500;
@@ -144,7 +144,7 @@
 
 .HyperMD-header.HyperMD-header-3.cm-line {
     --font-size-h3: 115%;
-    --font-size-h3-mobile: 115%;
+    --font-size-h3-mobile: calc(var(--tune-editor-font-size) + 3px);
     /* font-size: var(--font-size-h3); */
     font-size: var(--font-size-h3-mobile);
     font-weight: 450;
@@ -156,7 +156,7 @@
 }
 .HyperMD-header.HyperMD-header-4.cm-line {
     --font-size-h4: 100%;
-    --font-size-h4-mobile: 100%;
+    --font-size-h4-mobile: calc(var(--tune-editor-font-size) + 2px);
     /* font-size: var(--font-size-h4); */
     font-size: var(--font-size-h4-mobile);
     font-weight: 550;
