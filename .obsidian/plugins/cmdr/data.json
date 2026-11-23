@@ -46,12 +46,21 @@
   },
   "spacing": 0,
   "advancedToolbar": {
-    "rowHeight": 48,
+    "rowHeight": 40,
     "rowCount": 1,
     "spacing": 0,
-    "buttonWidth": 48,
+    "buttonWidth": 38,
     "columnLayout": false,
-    "mappedIcons": [],
+    "mappedIcons": [
+      {
+        "commandID": "tune-editor:tune-decrease-font-size",
+        "iconID": "lucide-a-arrow-down"
+      },
+      {
+        "commandID": "tune-editor:tune-increase-font-size",
+        "iconID": "lucide-a-arrow-up"
+      }
+    ],
     "tooltips": false,
     "heightOffset": 0
   },

@@ -1,10 +1,12 @@
 {
   "tabSize": 2,
   "mobileToolbarCommands": [
-    "editor:set-heading",
+    "tune-editor:tune-decrease-font-size",
+    "tune-editor:tune-increase-font-size",
     "editor:toggle-bullet-list",
     "editor:unindent-list",
     "editor:indent-list",
+    "editor:set-heading",
     "editor:undo",
     "editor:redo",
     "editor:attach-file",

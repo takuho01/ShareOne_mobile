@@ -3,5 +3,7 @@
   "enabledCssSnippets": [
     "style_common"
   ],
-  "cssTheme": "Primary"
+  "cssTheme": "Primary",
+  "floatingNavigation": true,
+  "autoFullScreen": false
 }
